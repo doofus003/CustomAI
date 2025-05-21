@@ -4,6 +4,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
 
 # Load the saved vectorstore
+# Load the saved vectorstore
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 vectorstore = Chroma(
     persist_directory="chroma_db",
